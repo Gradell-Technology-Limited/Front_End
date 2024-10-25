@@ -1,20 +1,16 @@
-import { Button } from '@/components/ui/button'
-import React from 'react'
+import LoginForm from "@/components/auth/LoginForm";
 
 const page = () => {
   return (
-    <main className='w-full pt-[5.6rem]'>
-      
-      <div className=' flex flex-col gap-3'>
-      <h4 className='font-bold text-[1.8rem] text-[#F5F5F6]'>Welcome back</h4>
-      <p className='text-[#94969C] text-base font-normal'>Welcome back! Please enter your details.</p>
+    <main className="w-full h-full pt-[4.8rem] lg:pt-[5.6rem]">
+      <div className="w-full flex flex-col gap-3">
+        <h4 className="font-semibold text-[1.8rem] text-[#F5F5F6]">Welcome back</h4>
+        <p className="text-[#94969C] text-base font-normal">
+          Welcome back! Please enter your details.
+        </p>
       </div>
-          <div className='w-full flex justify-between items-center'>
-<Button></Button>
-<Button></Button>
-          </div>
-    
+      <LoginForm />
     </main>
-  )
-}
-export default page
+  );
+};
+export default page;
